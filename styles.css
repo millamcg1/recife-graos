@@ -99,6 +99,28 @@ header {
     overflow: hidden; /* Ensure the overlay doesn't affect other content */
 }
 
+.top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 63px; /* Height of the cut-out */
+    background: inherit; /* Inherit background from header */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 63px));
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 63px; /* Height of the cut-out */
+    background: inherit; /* Inherit background from header */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    margin-top: -53px; /* Adjust margin to overlap top cut-out */
+}
+
+
 header::before {
     content: "";
     position: absolute;
@@ -191,30 +213,30 @@ p {
   text-align: justify;
   padding: 10px;
 }
-.grid-4-columns {
+.grid-3-columns {
   display: grid;
   grid-template-columns: 1fr; /* Default to a single column for smaller screens */
   grid-gap: 20px; /* Adjust the gap between grid items */
 }
 
-.grid-4-columns-with-first-narrow {
+.grid-3-columns-with-first-narrow {
   display: grid;
   grid-template-columns: 1fr; /* Default to a single column for smaller screens */
   grid-gap: 20px; /* Adjust the gap between grid items */
 }
 
 @media (min-width: 576px) {
-  .grid-4-columns {
+  .grid-3-columns {
     grid-template-columns: 1fr 1fr; /* Two columns for small screens and up */
   }
   
-  .grid-4-columns-with-first-narrow {
+  .grid-3-columns-with-first-narrow {
     grid-template-columns: 1fr 1fr; /* Two columns for small screens and up */
   }
 }
 
 @media (min-width: 768px) {
-  .grid-4-columns {
+  .grid-3-columns {
     grid-template-columns: 1fr 1fr 1fr; /* Three columns for medium screens and up */
   }
   
@@ -225,11 +247,11 @@ p {
 
 @media (min-width: 992px) {
   .grid-4-columns {
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns for large screens and up */
+    grid-template-columns: 1fr 1fr 1fr ; /* Four columns for large screens and up */
   }
   
   .grid-4-columns-with-first-narrow {
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns for large screens and up */
+    grid-template-columns: 1fr 1fr 1fr ; /* Four columns for large screens and up */
   }
 }
 
@@ -287,7 +309,7 @@ textarea.form-control {
 }
 
 .btn-primary {
-    background-color: #0d633b; /* Primary button background color */
+    background-color: #0f3d28; /* Primary button background color */
     color: #fff; /* Button text color */
     border: none; /* Remove default button border */
     padding: 10px 20px; /* Padding inside button */
@@ -296,7 +318,7 @@ textarea.form-control {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Darker background color on hover */
+    background-color: #11502e; /* Darker background color on hover */
 }
 
 /* Responsive adjustments for form and footer */
