@@ -1,0 +1,308 @@
+body {
+   font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  background: rgb(255, 255, 255);
+background: linear-gradient(90deg, rgba(99, 166, 103, 0.366) 0%, rgba(66, 180, 77, 0.243) 50%, rgba(73, 220, 54, 0.155) 100%);
+  padding: 0.5rem 1rem;
+  
+}
+
+.navbar-logo {
+  height: 100px;
+  width: auto;
+  transition: transform 0.3s ease-in-out; /* Smooth animation */
+  padding-left: 20px;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center the nav items */
+  align-items: center;
+  flex-grow: 1;
+  
+}
+
+.nav-item {
+  text-align: center;
+  margin-left: 10px; /* Space between links */
+  margin-right: 10px; /* Space between links */
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-link {
+  color: #000000;
+  padding: 0.5rem 1rem;
+  position: relative;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #77d38c;
+  transition: left 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.nav-link:hover::before {
+  left: 0;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+
+/* Responsive design for mobile view */
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Fixed-top adjustment */
+.navbar.fixed-top {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.navbar-brand {
+  flex-grow: 0; /* Prevent the brand from taking up more space */
+  margin-right: 20px; /* Add some space between the logo and nav items */
+}
+header {
+    position: relative;
+    background-image: url('images/graos.jpg'); /* Replace with your photo path */
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust height as needed */
+    color: #ffffff; /* Text color */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure the overlay doesn't affect other content */
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity (0.4) for darkness */
+    z-index: 1; /* Ensure the overlay is behind the text */
+}
+
+header h1,
+header p {
+    position: relative; /* Ensure text is on top of the overlay */
+    z-index: 2; /* Ensure text is on top of the overlay */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Text shadow for better visibility */
+    color: #ffffff; /* Maintain white color */
+}
+
+header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem; /* Adjust font size as needed */
+    margin: 0; /* Remove any default margins */
+}
+
+header p {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    margin-top: 20px; /* Optional: Adjust margin top */
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0; /* Remove any default margins */
+    text-align: center;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+   
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 32px; /* Decrease gap between grid items for smaller screens */
+    text-align: justify;
+    padding: 20px; /* Add padding to the grid container */
+}
+
+.img-responsive {
+    width: 100%; /* Ensure images take full width of their container */
+    max-width: 100%; /* Ensure images do not exceed their natural size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 2%;
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr; /* Stack grid items into a single column on smaller screens */
+}
+
+/* Media query for tablets and smaller screens */
+@media (min-width: 768px) {
+    .grid {
+        grid-gap: 48px; /* Increase gap between grid items for tablets */
+        padding: 30px; /* Adjust padding for tablets */
+    }
+
+    .grid-2-columns {
+        grid-template-columns: 1fr 1fr; /* Display two columns on tablets and larger screens */
+        padding: 40px; /* Adjust padding for two-column layout */
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 992px) {
+    .grid {
+        grid-gap: 64px; /* Default gap between grid items for larger screens */
+        padding: 40px; /* Default padding for larger screens */
+    }
+}
+
+
+h1, h2, h3 {
+  color: #386a44;
+  cursor: pointer;
+  padding: 10px;
+}
+
+p {
+  text-align: justify;
+  padding: 10px;
+}
+.grid-4-columns {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to a single column for smaller screens */
+  grid-gap: 20px; /* Adjust the gap between grid items */
+}
+
+.grid-4-columns-with-first-narrow {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to a single column for smaller screens */
+  grid-gap: 20px; /* Adjust the gap between grid items */
+}
+
+@media (min-width: 576px) {
+  .grid-4-columns {
+    grid-template-columns: 1fr 1fr; /* Two columns for small screens and up */
+  }
+  
+  .grid-4-columns-with-first-narrow {
+    grid-template-columns: 1fr 1fr; /* Two columns for small screens and up */
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-4-columns {
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns for medium screens and up */
+  }
+  
+  .grid-4-columns-with-first-narrow {
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns for medium screens and up */
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-4-columns {
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns for large screens and up */
+  }
+  
+  .grid-4-columns-with-first-narrow {
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns for large screens and up */
+  }
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Maintain a square aspect ratio for embeds */
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 30px 0; /* Padding for top and bottom */
+}
+
+.social-icon {
+    display: block; /* Ensure icons are displayed as block elements */
+    text-align: center; /* Center align icons */
+    margin-bottom: 10px; /* Optional: Add some space below icons */
+}
+
+.social-icon img {
+    width: 50px; /* Set the width of the icons */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block; /* Ensure icons are displayed inline */
+}
+
+
+
+
+
+.footer .text-muted {
+    font-size: 14px; /* Font size for copyright notice */
+    color: #666; /* Color for copyright notice */
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 20px; /* Bottom margin for form groups */
+}
+
+.form-control {
+    width: 100%; /* Full width for form inputs */
+    padding: 10px; /* Padding inside form inputs */
+    font-size: 14px; /* Font size for form inputs */
+    border: 1px solid #ccc; /* Border color for form inputs */
+    border-radius: 4px; /* Rounded corners for form inputs */
+}
+
+textarea.form-control {
+    resize: vertical; /* Allow vertical resizing for textarea */
+}
+
+.btn-primary {
+    background-color: #0d633b; /* Primary button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default button border */
+    padding: 10px 20px; /* Padding inside button */
+    font-size: 14px; /* Font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Responsive adjustments for form and footer */
+@media (max-width: 768px) {
+    .footer .col-md-6 {
+        margin-bottom: 20px; /* Bottom margin adjustment for footer columns */
+    }
+}
+

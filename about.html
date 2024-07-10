@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Recife Grãos</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+     
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+ <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Sobre Nós</a>
+          </li>
+          <li>
+             <a class="navbar-brand" href="index.html">
+        <img src="images/logo-2.png" alt="Recife Grãos" class="navbar-logo">
+      </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1>Sobre Nós</h1>
+        <p>Bem-vindo à Recife Grãos!</p>
+        <p>Na Recife Grãos, somos apaixonados por fornecer os melhores grãos, ervas do mercado e muito mais. Há mais de uma década, nos dedicamos a oferecer produtos de alta qualidade e um atendimento ao cliente excepcional.</p>
+        <h2>Nossa História</h2>
+        <p>A Recife Grãos nasceu com o objetivo de atender à crescente demanda por grãos e ervas de alta qualidade. Desde o início, nossa missão tem sido clara: trazer o melhor da natureza até você, mantendo um compromisso firme com a qualidade e a satisfação dos nossos clientes.</p>
+        <h2>O Que Fazemos</h2>
+        <p>Especializados na venda e distribuição de uma ampla variedade de grãos e ervas, trabalhamos incansavelmente para garantir que nossos produtos atendam aos mais altos padrões de qualidade. Nossa seleção inclui:</p>
+        <ul>
+            <li><b>Grãos</b>  </li>
+            <li><b>Composto Lácteo</b></li>
+            <li><b>Temperos</b> </li>
+            <li><b>Ervas</b> </li>
+            <li><b>Doces e Guloseimas</b> </li>
+            <br>
+
+            <a href="produtos.html" class="btn btn-success">Nossos Produtos</a>
+        </ul>
+
+            
+    
+    <br>
+        <h2>Nosso Compromisso com o Cliente</h2>
+        <p>Na Recife Grãos, o cliente está sempre em primeiro lugar. Nosso compromisso é proporcionar uma experiência de compra agradável e eficiente, oferecendo suporte personalizado e atendimento de excelência. Acreditamos que cada cliente é único e merece atenção especial, por isso, nossa equipe está sempre pronta para ajudar e responder a qualquer dúvida.</p>
+        <h2>Responsabilidade Social</h2>
+        <p>Além de nosso foco em qualidade e atendimento, na Recife Grãos também acreditamos em devolver à comunidade. Participamos ativamente de diversos trabalhos sociais, apoiando causas que promovem o bem-estar e o desenvolvimento sustentável em nossas comunidades. Nosso compromisso social é uma extensão natural dos nossos valores e da nossa visão de um futuro mais justo e saudável para todos.</p>
+        <h2>Nossa Visão</h2>
+        <p>Acreditamos em um futuro sustentável e saudável. Por isso, nos empenhamos em práticas de negócio responsáveis, trabalhando com fornecedores que compartilham dos mesmos valores e compromisso com a qualidade e sustentabilidade.</p>
+        <h2>Junte-se a Nós</h2>
+        <p>Convidamos você a explorar nosso site e descobrir a variedade de produtos que oferecemos. Estamos ansiosos para servi-lo e estabelecer uma parceria duradoura e benéfica.</p>
+        <p>Obrigado por escolher a Recife Grãos. Juntos, podemos cultivar um futuro mais saudável e saboroso.</p>
+    </div>
+
+    <footer id="contato" class="footer mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <!-- Contact Form -->
+                <form action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" class="form-control" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-6 text-md-right mt-2 mt-md-0">
+                
+                <a href="https://api.whatsapp.com/send/?phone=558189177524&text&type=phone_number&app_absent=0" class="social-icon" target="_blank">
+                    <img src="images/whatsapp-icon.png" alt="WhatsApp">
+                </a>
+                <!-- Instagram Icon -->
+                <a href="https://www.instagram.com/recifegraoscomercial/" class="social-icon" target="_blank">
+                    <img src="images/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="col-12 text-center mt-3">
+                <!-- Copyright Notice -->
+                <span class="text-muted">&copy; 2024 Recife Grãos. Todos os direitos reservados.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

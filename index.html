@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recife Grãos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-bxNTIf4XZl1Vt2nCvCkZgjKj6cSP7X5aA/CllcB4q6aXOYn0BskZc8M4P1B7IL0ImG+n3lFZ1dEGM7BM3Niz2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your custom styles -->
+</head>
+<body>
+  
+   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+     
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+ <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Sobre Nós</a>
+          </li>
+          <li>
+             <a class="navbar-brand" href="index.html">
+        <img src="images/logo-2.png" alt="Recife Grãos" class="navbar-logo">
+      </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Main Content -->
+    <header>
+        <div class="container-fluid header-background">
+            <div class="container">
+                <div class="header-content text-center text-white">
+                    <h1>Bem-vindo à Recife Grãos!</h1>
+                    <p>Descubra nossa variedade de grãos, ervas de alta qualidade e muito mais.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  <section class="grid grid-2-columns">
+          <div>
+            <br>
+
+            <br>
+            <img src="images/graos3.jpg" alt="Graos" class="img-responsive">
+            <br>
+            <br>
+            <div>
+            <img src="images/graos2.jpg" alt="Graos" class="img-responsive">
+          </div>
+          </div>
+
+          
+
+          <div>
+            <a name="more"></a>
+            <h2></h2>
+            <h3>Muito mais do que uma empresa:</h3>
+            <br>
+            <p>
+              A Recife Grãos se destaca como uma parceira ideal para varejistas e empreendedores que desejam abrir uma loja de produtos naturais. Com um amplo catálogo que abrange uma variedade excepcional de produtos como ervas, temperos, farinhas, doces, amendoim, granola e até ervas medicinais para chás, nossa empresa oferece diversas vantagens estratégicas.
+            </p>
+            <p>
+             Para varejistas, proporcionamos uma experiência de compra diferenciada, com entrega rápida e eficiente, garantia de qualidade em todos os produtos e preços competitivos que aumentam o poder de compra. Além disso, nossos serviços incluem um acompanhamento nutricional detalhado e um atendimento personalizado por meio de vendedores capacitados, garantindo suporte contínuo e adaptado às necessidades específicas de cada cliente.</p>
+          
+          <p>
+              Para empreendedores interessados em abrir uma loja de produtos naturais, oferecemos consultoria gratuita, proporcionando orientações valiosas desde a seleção de produtos até estratégias de marketing e gestão de estoque. Nossa ampla gama de produtos permite uma diversificação atrativa, atendendo tanto aos clientes que buscam itens cotidianos quanto aqueles interessados em produtos mais específicos, como ervas medicinais para chás, ampliando o potencial de crescimento do negócio.
+          </p>
+          <p>
+               Na Recife Grãos, estamos comprometidos em fornecer soluções abrangentes e personalizadas que não apenas atendem às necessidades do mercado de produtos naturais, mas também ajudam nossos parceiros a prosperar e se destacar em seus negócios.
+          </p>
+          </div>
+        </section>
+
+    <footer id="contato" class="footer mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <!-- Contact Form -->
+                <form action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" class="form-control" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-6 text-md-right mt-2 mt-md-0">
+                
+                <a href="https://api.whatsapp.com/send/?phone=558189177524&text&type=phone_number&app_absent=0" class="social-icon" target="_blank">
+                    <img src="images/whatsapp-icon.png" alt="WhatsApp">
+                </a>
+                <!-- Instagram Icon -->
+                <a href="https://www.instagram.com/recifegraoscomercial/" class="social-icon" target="_blank">
+                    <img src="images/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="col-12 text-center mt-3">
+                <!-- Copyright Notice -->
+                <span class="text-muted">&copy; 2024 Recife Grãos. Todos os direitos reservados.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <!-- Bootstrap and JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
